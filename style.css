@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --black: black;
+  --white: white;
+  --flex: flex;
+  --center: center;
+  --button:  rgb(136, 110, 46);
+}
+body {
+  background-color: var(--white);
+}
+.container {
+  height: 100px;
+  width: 100%;
+  padding: 20px;
+  display: var(--flex);
+  justify-content: space-between;
+  align-items: var(--center);
+  position: fixed;
+  top: 0;
+  background-color: var(--white);
+}
+.img {
+  height: 100px;
+}
+ul {
+  display: var(--flex);
+  align-items: var(--center);
+  justify-content: var(--center);
+  gap: 10px;
+}
+ul > li {
+  list-style: none;
+}
+ul > li > a {
+  color: var(--black);
+  text-decoration: none;
+}
+a:hover {
+  font-size: 18px;
+}
+.page-container {
+  height: 60vh;
+  width: 100%;
+  margin-top: 60px;
+  margin: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: var(--flex);
+  justify-content: var(--center);
+  align-items: var(--center);
+  animation: slide 9s infinite;
+}
+@keyframes slide {
+  0% {
+    background-image: url(https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVucyUyMGNsb3RoaW5nfGVufDB8fDB8fHww);
+  }
+  33% {
+    background-image: url(https://media.istockphoto.com/id/2208804293/photo/young-man-choosing-sustainable-clothes-in-a-store-with-ethical-and-eco-friendly-brands.jpg?s=612x612&w=0&k=20&c=SBjV7IFKkqcgxbGAZ70Tm1IhkBB6hnPGRGy21bhyq8I=);
+  }
+  66% {
+    background-image: url(https://media.istockphoto.com/id/2201046261/photo/casual-clothing-display-in-retail-store-with-folded-shirts-and-pants-national-thrift-shop-day.jpg?s=612x612&w=0&k=20&c=DivQ4eITzc49R0nsMKZ8KN4krO6aKd_WBTcDQtyk0Ts=);
+  }
+  100% {
+    background-image: url(https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVucyUyMGNsb3RoaW5nfGVufDB8fDB8fHww);
+  }
+}
+.page {
+  text-align: var(--center);
+}
+.page > p {
+  color: var(--white);
+  font-weight: 900;
+  font-size: 35px;
+}
+.page-button {
+  border: 2px solid var(--white);
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  transition: all ease 0.5s;
+}
+.page-button:hover {
+  background-color: rgb(136, 110, 46);
+  border-color: transparent;
+}
+.page-btn {
+  color: var(--white);
+  text-decoration: none;
+}
+.two-page-container {
+  height: 50vh;
+  width: 100%;
+  padding: 0;
+  margin: 20px 0;
+  margin: 15px;
+  display: var(--flex);
+  justify-content: space-between;
+  align-items: var(--center);
+}
+.page-one{
+    height: 100%;
+    width: 49%; 
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+    background-image: url(https://images.unsplash.com/photo-1557684387-08927d28c72a?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG1lbnMlMjBjbG90aGluZ3xlbnwwfHwwfHx8MA%3D%3D);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.page-two{
+    height: 100%;
+    width: 49%;
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+    background-image: url(https://images.unsplash.com/photo-1574968699009-6426913fce69?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fG1lbnMlMjBjbG90aGluZ3xlbnwwfHwwfHx8MA%3D%3D);
+       background-repeat: no-repeat;
+    background-size: cover;
+}
+.pg-a{
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    transition: color ease 0.5s;
+}
+.pg-a:hover{
+ color:  rgb(167, 122, 8);   
+ font-size: 35px;
+}
+.cards-container{
+  height: 100vh;
+  background-color: rgb(223, 229, 235);
+  padding: 10px;
+}
+
+.cards-containerp{
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+.card-container-one{
+  height: 50vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+.card1-one{
+  height: 100%;
+  width: 20%;
+  padding: 4px;
+  background-color: var(--white);
+}
+.card1-one > img{
+  height: 75%;
+  width: 100%;
+}
+.card1-one > p{
+  font-size: 15px;
+  text-align: center;
+}
+.card2-one{
+  height: 100%;
+  width: 20%;
+  padding: 4px;
+  background-color: var(--white);
+}
+.card2-one > img{
+  height: 75%;
+  width: 100%;
+}
+.card2-one > p{
+  font-size: 15px;
+  text-align: center;
+}
+.card3-one{
+  height: 100%;
+  width: 20%;
+  padding: 4px;
+  background-color: var(--white);
+}
+.card3-one > img{
+  height: 75%;
+  width: 100%;
+}
+.card3-one > p{
+  font-size: 15px;
+  text-align: center;
+}
+.card4-one{
+  height: 100%;
+  width: 20%;
+  padding: 4px;
+  background-color: var(--white);
+}
+.card4-one > img{
+  height: 75%;
+  width: 100%;
+}
+.card4-one > p{
+  font-size: 15px;
+  text-align: center;
+}
