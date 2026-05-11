@@ -12,6 +12,7 @@
 }
 body {
   background-color: var(--white);
+  padding-top: 100px;
 }
 .container {
   height: 100px;
@@ -46,7 +47,7 @@ a:hover {
 }
 .page-container {
   height: 60vh;
-  width: 100%; 
+  width: 100%;
   margin: 15px;
   margin-top: 80px;
   background-repeat: no-repeat;
@@ -90,8 +91,8 @@ a:hover {
   padding: 5px;
   transition: all ease 0.5s;
 }
-.page-btn:hover{
-    background-color: rgb(136, 110, 46);
+.page-btn:hover {
+  background-color: rgb(136, 110, 46);
   border-color: transparent;
   color: var(--white);
 }
@@ -151,70 +152,42 @@ a:hover {
   height: 60vh;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
   padding: 20px;
   gap: 10px;
 }
-.card1-one {
-  height: 100%;
-  width: 250px;
-  padding: 4px;
-  background-color: var(--white);
-}
-.card1-one > img {
-  height: 80%;
-  width: 100%;
-}
-.card1-one > p {
-  font-size: 15px;
-  text-align: center;
-}
-.card2-one {
-  height: 100%;
-  width: 250px;
-  padding: 4px;
-  background-color: var(--white);
-}
-.card2-one > img {
-  height: 80%;
-  width: 100%;
-}
-.card2-one > p {
-  font-size: 15px;
-  text-align: center;
-}
-.card3-one {
-  height: 100%;
-  width: 250px;
-  padding: 4px;
-  background-color: var(--white);
-}
-.card3-one > img {
-  height: 80%;
-  width: 100%;
-}
-.card3-one > p {
-  font-size: 15px;
-  text-align: center;
-}
+.card1-one,
+.card2-one,
+.card3-one,
 .card4-one {
   height: 100%;
   width: 250px;
   padding: 4px;
   background-color: var(--white);
 }
-.card4-one > img {
+
+.card1-one img,
+.card2-one img,
+.card3-one img,
+.card4-one img {
   height: 80%;
   width: 100%;
 }
-.card4-one > p {
+
+.card1-one p,
+.card2-one p,
+.card3-one p,
+.card4-one p {
   font-size: 15px;
+  margin: 6px;
   text-align: center;
 }
 .footer {
   height: 60vh;
   width: 90vw;
   display: var(--flex);
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 30px;
 }
@@ -287,7 +260,7 @@ a:hover {
   padding: 5px 20px;
   transition: all ease 0.5s;
 }
-.cards-container-btn:hover{
+.cards-container-btn:hover {
   color: white;
   background-color: var(--button);
 }
@@ -299,16 +272,65 @@ a:hover {
   justify-content: space-evenly;
   align-items: center;
 }
-.detail-section1{
+.detail-section1 {
   text-align: center;
 }
-.detail-section2{
+.detail-section2 {
   text-align: center;
 }
-.detail-section3{
+.detail-section3 {
   text-align: center;
 }
-.detail-logo{
+.detail-logo {
   margin: 20px 0 30px 0;
   font-size: 20px;
+}
+.about-main {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+    url("https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=1200")
+      center/cover no-repeat;
+}
+.about-hero {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(151, 156, 161);
+  text-align: center;
+}
+
+.about-hero h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.about-hero p {
+  font-size: 16px;
+}
+.about-story,
+.about-mission,
+.about-features {
+  padding: 40px 20px;
+  text-align: center;
+}
+.about-story h2,
+.about-mission h2,
+.about-features h2 {
+  margin-bottom: 15px;
+}
+.about-story p,
+.about-mission p {
+  max-width: 700px;
+  margin: 10px auto;
+  line-height: 1.6;
+}
+.about-features ul {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.about-features li {
+  margin: 8px 0;
 }
